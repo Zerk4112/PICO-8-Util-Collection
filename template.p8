@@ -2,10 +2,12 @@ pico-8 cartridge // http://www.pico-8.com
 version 41
 __lua__
 -- template for pico-8 games / experiments
-#include lib/coroutines.lua
-#include lib/mouse.lua
+#include coroutines.lua
+#include mouse.lua
+#include math.lua
 
 function _init()
+    -- bkgr_clr = randib(0, 15)
     bkgr_clr = 0
     debug = true
     mouse_init()

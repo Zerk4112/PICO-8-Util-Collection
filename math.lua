@@ -16,7 +16,6 @@
 --   local s = sqr(10)
 --   local a = aget(0, 0, 10, 10)
 
-
 function aget(x1,y1,x2,y2) return atan2(-(x1-x2), -(y1-y2)) end
 
 function dst(x0,y0,x1,y1)

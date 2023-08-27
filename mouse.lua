@@ -1,5 +1,31 @@
--- Dependencies
--- 1. coroutine.lua
+-- mouse.lua
+--
+-- A collection of mouse utility functions for PICO-8.
+--
+-- Functions:
+--   mouse_init() - initializes mouse coroutine (disabled by default)
+--   upd_m() - updates mouse position and click state
+--   draw_m() - draws mouse sprite
+--   get_m_xy() - gets mouse x and y position
+--   chk_m_clk() - checks mouse click and hold state
+--
+-- Usage:
+--  #include coroutines.lua
+-- function _init()
+--    mouse_init()
+-- end
+--
+-- function _update()
+--     upd_m() (This is used if mouse_init() is disabled with m_cr=false)
+-- end
+--
+-- function _draw()
+--     cls()
+--     draw_m()
+-- end
+--
+-- Dependencies:
+--   coroutines.lua
 
 poke(0x5F2D, 1)
 m_x,m_y = 0,0
